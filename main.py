@@ -17,12 +17,12 @@ Bot = Client(
 START_TEXT = """
 Hello {}, I am a photo to glitch art telegram bot.
 
-Made by @FayasNoushad
+Made by @KOT_BOTS
 """
 START_BUTTONS = InlineKeyboardMarkup(
     [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('Channel', url='https://telegram.me/KOT_BOTS'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/KOT_REPORS')
     ]]
 )
 PATH = os.environ.get("PATH", "./DOWNLOADS")
@@ -51,7 +51,7 @@ async def glitch_art(bot, update):
         )
     except Exception as error:
         await message.edit_text(
-            text=f"**Error :** `{error}`\nContact @TheFayas."
+            text=f"**Error :** `{error}`\nContact @KOT_REPORS."
         )
         return 
     await message.edit_text(
@@ -64,7 +64,7 @@ async def glitch_art(bot, update):
         os.remove(glitch_art)
     except Exception as error:
         await message.edit_text(
-            text=f"**Error :** `{error}`\nContact @TheFayas."
+            text=f"**Error :** `{error}`\nContact @KOT_REPORS."
         )
         return
     await message.delete()
